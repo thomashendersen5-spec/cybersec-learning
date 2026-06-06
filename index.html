@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Academy | Belajar Cybersecurity Lengkap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0a0f1d',
+                        terminal: '#00ff66'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkbg text-gray-300 font-sans antialiased">
+
+    <nav class="border-b border-gray-800 bg-darkbg/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-white tracking-wider flex items-center gap-2">
+                <span class="text-terminal">&gt;_</span> CYBER<span class="text-terminal">SEC</span>
+            </div>
+            <div class="space-x-6">
+                <a href="#kurikulum" class="hover:text-terminal transition">Kurikulum</a>
+                <a href="#tools" class="hover:text-terminal transition">Tools</a>
+                <a href="#mulai" class="bg-terminal text-black font-semibold px-4 py-2 rounded hover:bg-green-400 transition">Mulai Belajar</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-6xl mx-auto px-4 py-20 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+            Kuasai <span class="text-terminal">Cybersecurity</span> dari Nol
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+            Platform pembelajaran interaktif untuk mempelajari ethical hacking, pertahanan jaringan, hingga analisis malware secara terstruktur dan aman.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#kurikulum" class="bg-terminal text-black font-bold px-6 py-3 rounded hover:bg-green-400 transition">Lihat Jalur Belajar</a>
+            <a href="https://github.com" target="_blank" class="border border-gray-700 hover:border-terminal px-6 py-3 rounded transition">Kontribusi di GitHub</a>
+        </div>
+    </header>
+
+    <section id="kurikulum" class="max-w-6xl mx-auto px-4 py-16 border-t border-gray-900">
+        <h2 class="text-3xl font-bold text-white mb-2 text-center">Kurikulum Pembelajaran</h2>
+        <p class="text-gray-500 text-center mb-12">4 Pilar utama yang harus kamu kuasai untuk menjadi ahli keamanan siber.</p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-gray-700 transition">
+                <div class="text-terminal text-2xl font-bold mb-2">01. Fundamental & Jaringan</div>
+                <h3 class="text-xl font-semibold text-white mb-3">Dasar-Dasar Sistem & Network</h3>
+                <p class="text-gray-400 mb-4">Sebelum meretas, kamu harus tahu cara kerja target. Di sini kamu belajar Linux, model OSI, protokol TCP/IP, DNS, dan dasar-dasar pemrograman (Python/Bash).</p>
+                <span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Level: Pemula</span>
+            </div>
+
+            <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-gray-700 transition">
+                <div class="text-terminal text-2xl font-bold mb-2">02. Pentesting (Red Teaming)</div>
+                <h3 class="text-xl font-semibold text-white mb-3">Ethical Hacking & Eksploitasi</h3>
+                <p class="text-gray-400 mb-4">Belajar melakukan pemindaian kerentanan, Web Application Penetration Testing (OWASP Top 10), Privilege Escalation, dan cara membuat laporan temuan bugs.</p>
+                <span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Level: Menengah</span>
+            </div>
+
+            <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-gray-700 transition">
+                <div class="text-terminal text-2xl font-bold mb-2">03. Cyber Defense (Blue Teaming)</div>
+                <h3 class="text-xl font-semibold text-white mb-3">Defensif & Analisis Keamanan</h3>
+                <p class="text-gray-400 mb-4">Fokus pada pertahanan: mengonfigurasi Firewall, memantau log lalu lintas jaringan menggunakan SIEM (Splunk/Wazuh), Digital Forensics, dan Incident Response.</p>
+                <span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Level: Menengah</span>
+            </div>
+
+            <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-gray-700 transition">
+                <div class="text-terminal text-2xl font-bold mb-2">04. Advanced Security</div>
+                <h3 class="text-xl font-semibold text-white mb-3">Reverse Engineering & Cryptography</h3>
+                <p class="text-gray-400 mb-4">Membongkar file malware untuk melihat cara kerjanya (Malware Analysis), memahami algoritma enkripsi, serta mengamankan arsitektur Cloud.</p>
+                <span class="text-xs bg-gray-800 text-gray-400 px-3 py-1 rounded-full">Level: Mahir</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="max-w-6xl mx-auto px-4 py-16 border-t border-gray-900 bg-gray-900/20 rounded-xl">
+        <h2 class="text-3xl font-bold text-white mb-8 text-center">Rekomendasi Platform Praktik (Lab)</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <a href="https://tryhackme.com" target="_blank" class="p-4 bg-gray-900 rounded border border-gray-800 hover:border-terminal transition block">
+                <div class="font-bold text-white">TryHackMe</div>
+                <div class="text-xs text-gray-500 mt-1">Sangat ramah pemula</div>
+            </a>
+            <a href="https://www.hackthebox.com" target="_blank" class="p-4 bg-gray-900 rounded border border-gray-800 hover:border-terminal transition block">
+                <div class="font-bold text-white">Hack The Box</div>
+                <div class="text-xs text-gray-500 mt-1">Tantangan CTF tingkat lanjut</div>
+            </a>
+            <a href="https://portswigger.net/web-security" target="_blank" class="p-4 bg-gray-900 rounded border border-gray-800 hover:border-terminal transition block">
+                <div class="font-bold text-white">PortSwigger Web Lab</div>
+                <div class="text-xs text-gray-500 mt-1">Khusus Keamanan Web</div>
+            </a>
+            <a href="https://www.kali.org" target="_blank" class="p-4 bg-gray-900 rounded border border-gray-800 hover:border-terminal transition block">
+                <div class="font-bold text-white">Kali Linux</div>
+                <div class="text-xs text-gray-500 mt-1">OS wajib Pentester</div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-900 mt-20 bg-black/40 text-center py-8 text-sm text-gray-600">
+        <p>&copy; 2026 CyberSec Academy. Dibuat untuk tujuan edukasi keamanan siber.</p>
+    </footer>
+
+</body>
+</html>
